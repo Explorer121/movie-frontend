@@ -1,0 +1,40 @@
+/* @import url(https://fonts.googleapis.com/css?family=Lato:400,300,700); */
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,200;1,300&family=Mukta:wght@200;300;400&family=Noto+Sans+Balinese:wght@400;500;700&display=swap'); */
+.info{
+     /* background-color: #2f2c2c; */
+     width: 100%;
+     margin: 0 auto;
+     /* box-shadow: 0 0 10px 10px #231f1f; */
+     border-radius: 10px;
+     -webkit-border-radius: 10px;
+     -moz-border-radius: 10px;
+     -ms-border-radius: 10px;
+     -o-border-radius: 10px;
+}
+.infor__det {
+     text-align: center;
+     padding: 20px 0; 
+     margin: 5% 0;
+}
+.row__detail {
+     display: flex;
+     margin: 9% 0;
+}
+.info__overs {
+     padding: 10px;
+     display: flex;
+     flex-direction: row;
+     gap: 1rem !important;
+}
+.main_flex{
+     flex: 1;
+}
+.main_flexy{
+     flex: 2;
+}
+
+@media screen and (max-width: 760px) {
+     .info__overs {
+          flex-direction: column;
+     }
+}

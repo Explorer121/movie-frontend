@@ -1,0 +1,123 @@
+.action{
+     width: 100%;
+     margin: auto;
+}
+.action__list {
+     /* padding: 10px 0; */
+     display: flex;
+}
+
+.action__card {
+     width: 180x;
+     height: 150px;
+     margin: 30px auto;
+     transition: all 0.5s linear;
+     position:relative;
+     background-color: RGB(0, 60, 60);
+}
+
+.blur__card {
+    position: absolute;
+    display: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: "";
+    width: 100%;
+    height: 100;
+    z-index: 50;
+    background-color: RGB(255, 77, 32);
+    opacity: 0.2;
+    transition: all 0.5s linear;
+}
+
+.action__card:hover {
+     transform: scale(1.1);
+}
+
+.action__card:hover > .blur__card{
+    display: block;
+}
+
+.card__links {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+
+
+
+
+/* Card */
+.card{
+     width: 200px;
+     height: 190px;
+     margin: auto;
+     position: relative;
+     border-radius: 15px;
+     -webkit-border-radius: 15px;
+     -moz-border-radius: 15px;
+     -ms-border-radius: 15px;
+     -o-border-radius: 15px;
+     transition: all 1s ease-in-out;
+     -webkit-transition: all 1s ease-in-out;
+     -moz-transition: all 1s ease-in-out;
+     -ms-transition: all 1s ease-in-out;
+     -o-transition: all 1s ease-in-out;
+}
+.cardm {
+     width: 230px;
+     height: 200px;
+     position: relative;
+     margin: 0 auto;
+     transition: all 1s ease-in-out;
+     border-radius: 15px;
+     padding: 1rem;
+}
+.cardm img ,
+.card img {
+     width: 100%;
+     height: 100%;
+     transition: all 0.9s ease-in-out;
+     border-radius: 15px;
+     z-index: 2;            
+
+}
+.cardm:hover,
+.card:hover {
+     transform: scale(1.1);
+}
+.cardm:hover::after,
+.card:hover::after{
+     /* background: red; */
+     content: "";
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     margin: auto;
+     z-index: 1;
+     left: 0;
+     opacity: 0.2;
+     border-radius: 15px;
+}
+
+.card__desc {
+     /* transform: scale(1.1); */
+     position: absolute;
+     width: 100%;
+     bottom: 10%;
+     transition: all 0.5s ease-in-out;
+     display: none;
+     z-index: 3;
+     opacity: 1;
+     text-align: center;
+     font-size: 22px;
+}
+span{ color: #FFF; }
+.cardm:hover > .card__desc,
+.card:hover > .card__desc { display: block; }
+

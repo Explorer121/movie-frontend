@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,200;1,300&family=Mukta:wght@200;300;400&display=swap');
+
+
+.landing__content {
+     width: 100%;
+}
+img {
+     width: 100%;
+     height: 100%;
+}
+
+
+.landing__cont {
+     padding: 20% 0;
+}
+
+.form__email {
+     padding: 20px 0;
+}
+
+.form__email button {
+     border: none;
+     font-size: 25px;
+     padding: 0.7rem 1rem;
+}
+
+.form__email input {
+     padding: 0.7rem 1rem;
+     border: none;
+     font-size: 25px;
+}
+
+@media (max-width: 560px){
+     
+     .landing__cont {
+          padding: 30% 0;
+     }
+     .landing__cont h1 {
+          font-family: 'Mukta', sans-serif;
+          font-size: 20px;
+     }
+     .form__email {
+          display: flex;
+          flex-direction: column;
+          line-height: 0.7rem;
+     }
+     .form__email input {
+          padding: 0.9rem 1.5rem;
+          border: none;
+          font-size: 25px;
+     }
+     .form__email button {
+          border: none;
+          font-size: 25px;
+          padding: 0.5rem;
+     }
+}
+
+/* Enjoy */
+.enjoy {
+     width: 90%;
+     margin: 0 auto;
+     display: flex;
+     gap: 2rem;
+     padding:  20px  0px 20px 0px;
+     align-items: center;
+}
+
+.enjoy > div {
+     flex: 1;
+}
+
+@media (max-width: 560px){
+     .enjoy {
+          flex-direction: column;
+     }
+     .enjoy > div {
+          text-align: center;
+          padding:  20px  0px 20px 0px;
+     }
+     .enjoy h1 {
+          font-size: 30px;
+          font-family: 'Montserrat', sans-serif;
+          padding:  0px  0px 20px 0px;
+     }
+}
+
+.center {
+     text-align: center;
+}
+
+
+/* Portfolio */
+
+.flip-box {
+     background-color: transparent;
+     width: 100%;
+     height: 300px;
+     perspective: 1000px;
+   }
+   
+   .flip-box-inner {
+     position: relative;
+     width: 100%;
+     height: 100%;
+     text-align: center;
+     transition: transform 0.8s;
+     transform-style: preserve-3d;
+   }
+   
+   .flip-box:hover .flip-box-inner {
+     transform: rotateX(180deg);
+   }
+   
+   .flip-box-front, .flip-box-back {
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     -webkit-backface-visibility: hidden;
+     backface-visibility: hidden;
+   }
+   
+   .flip-box-front {
+     background-color: #bbb;
+     color: black;
+   }
+   
+   .flip-box-back {
+     background-color: dodgerblue;
+     color: white;
+     transform: rotateX(180deg);
+   }
