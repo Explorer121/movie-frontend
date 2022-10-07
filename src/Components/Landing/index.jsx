@@ -2,7 +2,9 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { Container, Button, Center, H1, P } from '../styled'
 import './Landing.css'
+import Footer from '../Header/Footer'
 import LandingLogo from '../../assets/netflix.jpg'
+
 
 const Landing = () => {
 
@@ -77,10 +79,7 @@ const Landing = () => {
                <Link to="https://explorer-portfolio.explorer233.repl.co/" style={{ color: '#FFF', textDecoration: 'none', textTransform: 'uppercase' }}>Link</Link>
           </div>
       </div>
-
-     <footer style={{ textAlign: 'center', fontFamily: 'Montserrat, sans-serif' }}>
-          <p>Develop and &#169; by Explorer</p>
-     </footer>
+               <Footer />
     </div>
   )
 }

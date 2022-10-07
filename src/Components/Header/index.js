@@ -75,10 +75,10 @@ const Header = ({ query, setSearchParams }) => {
         <Container>
           <div className='header__nav'>
   
-            <Link to="/" 
+            <a href="/" 
           onClick={toggleDrawerHide}        className="logo__img">
               <img className='img' src={Logo} alt="Movie Logo" />
-            </Link>
+            </a>
            
             <div className="header__account">
               

@@ -2,6 +2,7 @@ import axios from 'axios';
 import { useState, useEffect  } from 'react';
 import { Routes, Route, useSearchParams  } from 'react-router-dom';
 import Header from './Components/Header'
+import Footer from './Components/Header/Footer'
 import './App.css'
 import { useAuth } from './Hoc/context';
 import Home from './Components/Home';
@@ -78,6 +79,7 @@ const App = () => {
                          />} />
                          <Route exact path="/play/:id" element={<Play />} />
                     </Routes>
+                    <Footer />
                </div>
           )
      }
